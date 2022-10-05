@@ -1,6 +1,8 @@
 :root {
   --link-color: lightgrey;
   --odin-color: white;
+  --submit-color: #4e4b4b;
+  --submit-hover-color: #8b8686;
 }
 
 @font-face {
@@ -58,6 +60,36 @@
   bottom: 1rem;
 }
 
-a {
+.flex-container-left a {
   color: var(--link-color);
+}
+
+
+p {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+button{
+  background-color: var(--submit-color);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--submit-hover-color);
+}
+
+.flex-container-right a {
+  color: var(--submit-color);
+}
+
+.flex-container-right a:hover {
+  color: var(--submit-hover-color);
 }
