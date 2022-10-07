@@ -1,8 +1,8 @@
 :root {
   --link-color: lightgrey;
   --odin-color: white;
-  --submit-color: #4e4b4b;
-  --submit-hover-color: #8b8686;
+  --submit-color: #8a5151;
+  --submit-hover-color: #d16c6c;
 }
 
 @font-face {
@@ -83,6 +83,8 @@ button{
   font-weight: bold;
   padding: 0.75rem 2rem;
   border-radius: 5px;
+  box-shadow:  0px 3px 8px rgb(104, 93, 93);
+
 }
 
 button:hover {
@@ -100,13 +102,17 @@ button:hover {
 .top-right {
   padding-top: 10vh;
   height: 20vh;
-  padding: 10vh 14rem 0 1rem;
+  padding: 10vh 20vw 0 1rem;
 }
 
 .middle-right {
   padding: 1rem 0;
   display: flex;
   flex-direction: row;
+  
+}
+
+.form {
   background-color: white;
   box-shadow:  0px 3px 8px rgb(207, 207, 207);
 }
@@ -118,8 +124,30 @@ button:hover {
   padding: 0 1rem;
 }
 
+.form-bottom {
+  padding: 1rem;
+}
+
+.form-bottom p {
+  padding-top: 1rem;
+}
+
+.form-bottom a {
+  text-decoration: none;
+  color: var(--submit-color);
+}
+
 label, input {
   display: block;
+}
+
+input {
+  border: 2px solid #E5E7EB;
+}
+
+input:focus {
+  border: 3px solid lightblue;
+  box-shadow: 0px 3px 8px rgb(207, 207, 207);
 }
 
 label {
